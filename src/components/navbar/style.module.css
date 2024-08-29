@@ -1,0 +1,6 @@
+.main{
+    width: 83vw;
+    height: 45px;
+    background-color: var(--darkBg);
+    border: 1px solid var(--border);
+}

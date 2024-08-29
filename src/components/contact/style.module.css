@@ -1,0 +1,5 @@
+.main{
+    height: calc(100vh - 45px);
+    background-color: aquamarine;
+    position: relative;
+}

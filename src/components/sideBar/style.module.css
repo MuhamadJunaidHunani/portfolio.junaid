@@ -1,0 +1,32 @@
+.sidebar {
+    background-color: var(--darkBg);
+    width: 17vw;
+    height: 100vh;
+    border: 1px solid var(--border);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.sidebar li.active {
+    background: #ff0000;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+    width: calc(100% - 200px);
+}
+
+section {
+    height: 100vh;
+    padding: 50px;
+    border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,10 @@
+.main{
+    display: flex;
+    width: 100vw;
+    background-color: aqua;
+}
+.submain{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}

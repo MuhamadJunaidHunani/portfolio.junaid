@@ -1,0 +1,17 @@
+.main{
+    width: 83vw;
+    height: calc(100vh - 45px);
+    background-color:var(--lightBg) ;
+    overflow: auto;
+    /* background-image: url('../../assets/images/bg2.jpg'); */
+    /* background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; */
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#div2{
+    height: calc(100vh - 45px);
+}

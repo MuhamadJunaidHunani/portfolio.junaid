@@ -1,0 +1,31 @@
+.main {
+    height: calc(100vh - 45px);
+    background-color: var(--lightBg);
+    position: sticky;
+    top: 0;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0) inset;
+
+}
+
+.journey {
+    height: calc(100vh - 45px);
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.785) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.772) 100%),
+     linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 100%),
+      url('../../assets/images/journey.jpg');
+    background-position: center, center, center;
+    background-size: 100% 100%, 100% 100%, 100% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.destination {
+    height: calc(100vh - 45px);
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.785) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.772) 100%), 
+    linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 100%),
+     url('../../assets/images/destination.jpg');
+    background-position: center, center, center;
+    background-size: 100% 100%, 100% 100%, 100% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
