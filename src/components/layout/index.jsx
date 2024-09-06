@@ -3,12 +3,12 @@ import styles from './style.module.css'
 import SideBar from "../sideBar";
 import NavBar from "../navbar";
 
-const Layout = ({children})=>{
+const Layout = ({children , Languages})=>{
     return(
         <div className={styles.main}>
             <SideBar/>
             <div className={styles.subMain}>
-                <NavBar/>
+                <NavBar languages = {Languages}/>
                 {children}
             </div>
         </div>

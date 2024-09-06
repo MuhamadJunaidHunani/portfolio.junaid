@@ -1,0 +1,20 @@
+.starRatingContainer {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .starEmpty {
+    font-size: 2rem;
+    color: #4d4d4d;
+  }
+  
+  .starFilled {
+    font-size: 2rem;
+    color: #f5a700 !important;
+  }
+  
+  .starRatingContainer span:hover,
+  .starRatingContainer span:hover ~ span {
+    color: #b3763aac;
+  }
+  

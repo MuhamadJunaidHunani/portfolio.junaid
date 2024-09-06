@@ -1,6 +1,37 @@
-.main{
-    width: 83vw;
+.main {
+    display: flex;
+    align-items: center;
     height: 45px;
+    width: 100%;
+    overflow-y: auto;
     background-color: var(--darkBg);
+}
+
+.langCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkBg);
+    height: 100%;
+    padding: 0 20px;
     border: 1px solid var(--border);
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+
+.langCont img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.langCont p {
+    font-size: 18px;
+    color: rgba(236, 191, 69, 0.975);
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+.activeLang{
+    border-bottom:1px solid var(--lightBg) ;
+    background-color: var(--lightBg);
+    border-top: 5px solid var(--links);
 }

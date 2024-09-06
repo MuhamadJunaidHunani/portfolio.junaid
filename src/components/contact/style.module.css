@@ -1,5 +1,68 @@
-.main{
+.main {
     height: calc(100vh - 45px);
-    background-color: aquamarine;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--lightBg);
+    color: white;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 45%;
+}
+
+.inputField {
+    padding: 10px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+}
+
+.messageField {
+    padding: 10px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+    height: 100px;
+    resize: none;
+}
+
+.submitButton {
+    padding: 10px;
+    background-color: #f57c00;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.textContainer {
+    width: 45%;
+}
+
+.heading {
+    font-size: 2rem;
+    color: #f57c00;
+}
+
+.text {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+.socialIcons i {
+    cursor: pointer;
+}
+
+.socialIcons i:hover {
+    color: #f57c00;
 }

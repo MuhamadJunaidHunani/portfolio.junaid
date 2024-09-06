@@ -1,31 +1,141 @@
+*{
+    font-family: sans-serif;
+}
 .main {
-    height: calc(100vh - 45px);
-    background-color: var(--lightBg);
-    position: sticky;
-    top: 0;
-    overflow-x: hidden;
-    box-shadow: 0px 0px 3px rgb(0, 0, 0) inset;
-
+  height: calc(100vh - 45px);
+  background-color: var(--lightBg);
+  position: sticky;
+  top: 0px;
+  overflow-x: hidden;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0) inset;
 }
 
-.journey {
-    height: calc(100vh - 45px);
-    width: 100%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.785) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.772) 100%),
-     linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 100%),
-      url('../../assets/images/journey.jpg');
-    background-position: center, center, center;
-    background-size: 100% 100%, 100% 100%, 100% 100%;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+.skillsContainer {
+  height: calc(100vh - 45px);
+  width: 100%;
+  background-color: var(--lightBg);
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+  /* font-family: Arial, Helvetica, sans-serif !important; */
 }
+
+.skillsTitle {
+  font-size: 2em;
+  margin-bottom: 20px;
+  position: relative;
+  font-weight: bold;
+}
+
+.skillsTitle::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #444;
+  z-index: -1;
+  font-size: 3em;
+  width: 100%;
+  overflow: hidden;
+}
+
+.skillsDescription {
+  margin-bottom: 30px;
+  font-size: 1.2em;
+  color: #ccc;
+}
+.barLangCont{
+    display: flex;
+}
+.skillsBars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.skillBar {
+  /* width: 45%; */
+  margin-bottom: 20px;
+}
+
+.skillLabel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.skillLabel span {
+  font-size: 1em;
+}
+
+.progressBar {
+  background-color: #333;
+  border-radius: 5px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.progressBar > div {
+  height: 100%;
+  background-color: #59d0e9;
+  border-radius: 5px;
+}
+
+.skillsLangCont{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillLang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    /* background-color: var(--darkBg); */
+    /* height: 50px; */
+    padding: 0 30px;
+    /* border: 1px solid var(--border); */
+    box-sizing: border-box;
+    /* flex-shrink: 0; */
+}
+
+.skillLang img {
+    width: 4.5vw;
+    /* margin-right: 10px; */
+}
+
+.skillLang p {
+    font-size: 12px;
+    color: #59d0e9;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+
+
 
 .destination {
-    height: calc(100vh - 45px);
-    width: 100%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.785) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.772) 100%), 
-    linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 100%),
-     url('../../assets/images/destination.jpg');
-    background-position: center, center, center;
-    background-size: 100% 100%, 100% 100%, 100% 100%;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+  height: calc(100vh - 45px);
+  width: 100%;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.785) 0%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(0, 0, 0, 0.772) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("../../assets/images/destination.jpg");
+  background-position: center, center, center;
+  background-size: 100% 100%, 100% 100%, 100% 100%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
 }

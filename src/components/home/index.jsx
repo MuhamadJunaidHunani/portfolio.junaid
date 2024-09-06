@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './style.module.css'
-import Admin from '../../assets/images/Admin.jpeg'
+import Admin from '../../assets/images/Admin2.jpeg'
 import AutoTypingText from "../AutoTypingText";
 
 const Home = ()=>{
@@ -16,13 +16,9 @@ const Home = ()=>{
         <p>
         Transforming code into creativity, I build the bridges between vision and innovation.   
         </p>
-        {/* <div className={styles.cta}>
-          <input type="email" placeholder="Enter your email" />
-          <button>Get Started</button>
-        </div> */}
       </div>
       <div className={styles.heroImage}>
-        {/* <img src={Admin} alt="Illustration" /> */}
+        <img src={Admin} alt="Illustration" />
       </div>
     </div>
     )

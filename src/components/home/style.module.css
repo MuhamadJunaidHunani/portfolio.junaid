@@ -4,10 +4,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 50px 0;
-    background-color: var(--lightBg);
-    /* position: sticky;
-    top: 0px; */
-    /* background-attachment: fixed; */
 }
 
 .heroContent {
@@ -17,7 +13,6 @@
 
 .heroContent .itroHd {
     font-size: 40px;
-    /* margin-bottom: 20px; */
     font-weight: 600;
     color: #919191;
 }
@@ -37,11 +32,33 @@
     line-height: 30px;
 }
 
-.heroImage img {
-    width: 40vw;
-    height: auto;
-    animation: hero 1s ease-out forwards;
+.heroImage {
+    position: relative; /* Make the container a positioned element */
+    width: 25vw;
+    height: 25vw;
 }
+
+.heroImage img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid rgb(65, 65, 65);
+    animation: hero 0.5s ease-out forwards;
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+}
+
+.heroImage::before {
+    content: "";
+    position: absolute; /* Position the gradient overlay on top of the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Match the border radius of the image */
+    background: linear-gradient(circle, rgba(0, 0, 0, 0.5), transparent); /* Gradient overlay */
+    pointer-events: none; /* Allow interactions to pass through the gradient overlay */
+}
+
 
 @keyframes hero {
     0% {
@@ -49,6 +66,6 @@
     }
 
     100% {
-        translate: 50px 0px;
+        translate: -50px 0px;
     }
 }
