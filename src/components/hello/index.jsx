@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import styles from './style.module.css'
-import About from "../about";
 import journeyImg from '../../assets/images/journey.jpg'
 import DestinationImg from '../../assets/images/destination.jpg'
 
@@ -32,7 +31,7 @@ const Hello = () => {
     });
   });
   return (
-    <div className={`sticky top-0 h-[506px] ${styles.hello}`} id="hello">
+    <div className={`sticky top-0 ${styles.hello}`} id="hello">
         <div className={styles.overlay} id="overlay"></div>
     </div>
   );

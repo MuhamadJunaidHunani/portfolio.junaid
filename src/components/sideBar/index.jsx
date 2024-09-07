@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { FcHome } from "react-icons/fc";
-import { FcContacts } from "react-icons/fc";
-import { FcAbout } from "react-icons/fc";
 
 const Sidebar = () => {
   const [activeLink, setActiveLink] = useState("home");
