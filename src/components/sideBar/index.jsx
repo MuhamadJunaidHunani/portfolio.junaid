@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import styles from "./style.module.css";
 
 const Sidebar = () => {
   const [activeLink, setActiveLink] = useState("home");
-  const sections = ["home", 'hello' , "about", "projects", "skills", "contact"];
+  
+  // Use useMemo to memoize the sections array
+  const sections = useMemo(() => ["home", "hello", "about", "projects", "skills", "contact"], []);
+
   const links = [
     { name: "Welcome", icon: "https://img.icons8.com/color/48/home--v1.png" },
     { name: "hello", icon: "https://img.icons8.com/color/48/home--v1.png" },
@@ -12,20 +15,19 @@ const Sidebar = () => {
     { name: "Capabilities", icon: "https://img.icons8.com/color/48/internship.png" },
     { name: "Reach Me", icon: "https://img.icons8.com/color/48/contacts.png" }
   ];
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const main = document.getElementById("main");
       const offsets = sections.map((id) => {
         const element = document.getElementById(id);
-        return { id, offsetTop: element.offsetTop , element };
+        return { id, offsetTop: element.offsetTop, element };
       });
       const scrollPosition = main.scrollTop + 45;
       const div2 = document.querySelector("#div2");
       const destination = document.querySelector("#destination");
       const contact = document.querySelector("#projects");
       const aboutCont = document.querySelector("#about");
-      // const hello2 = document.querySelector("#hello2");
       
       const tempheight = div2?.getBoundingClientRect().height;
       if (div2?.getBoundingClientRect().top) {
@@ -37,10 +39,10 @@ const Sidebar = () => {
 
       if (contact?.getBoundingClientRect().top < 65) {
         aboutCont.style.position = "relative";
-      }
-      else {
+      } else {
         aboutCont.style.position = "sticky";
       }
+
       for (let i = 0; i < offsets.length; i++) {
         if (
           scrollPosition <= offsets[i]?.offsetTop + 200 &&
@@ -58,17 +60,22 @@ const Sidebar = () => {
     return () => {
       main.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [sections]);
 
   const handleClick = async (id) => {
-    // document.querySelector("#contact").style.display = 'block'
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <nav className={styles.sidebar}>
       <h1 className={styles.sidebarHd}>
-      <img width="48" height="48" src="https://img.icons8.com/color/48/code-file.png" alt="code-file"/> Portfolio
+        <img
+          width="48"
+          height="48"
+          src="https://img.icons8.com/color/48/code-file.png"
+          alt="code-file"
+        />{" "}
+        Portfolio
       </h1>
       <ul className={styles.linksCont}>
         {sections.map((containers, index) => {
@@ -80,8 +87,8 @@ const Sidebar = () => {
               }`}
               onClick={() => handleClick(containers)}
             >
-                <img src={links[index].icon} alt={`${links[index].name} icon`} />
-                {links[index].name}
+              <img src={links[index].icon} alt={`${links[index].name} icon`} />
+              {links[index].name}
             </li>
           );
         })}
