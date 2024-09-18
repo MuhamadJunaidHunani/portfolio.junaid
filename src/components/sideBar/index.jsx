@@ -25,7 +25,7 @@ const Sidebar = () => {
       });
       const scrollPosition = main.scrollTop + 45;
       const div2 = document.querySelector("#div2");
-      const destination = document.querySelector("#destination");
+      const service = document.querySelector("#service");
       const contact = document.querySelector("#projects");
       const aboutCont = document.querySelector("#about");
       
@@ -33,7 +33,7 @@ const Sidebar = () => {
       if (div2?.getBoundingClientRect().top) {
         const scrollingRatio =
           ((div2?.getBoundingClientRect().top - 45) / tempheight) * 100;
-        destination.style.left =
+        service.style.left =
           scrollingRatio <= "0" ? "0%" : `${scrollingRatio}%`;
       }
 

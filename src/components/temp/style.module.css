@@ -1,3 +1,4 @@
 .div2{
     height: calc(100vh - 45px);
+    pointer-events: none;
 }
