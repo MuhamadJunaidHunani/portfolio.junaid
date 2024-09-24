@@ -1,8 +1,8 @@
 // import quiz from '../../assets/images/projects/quiz.png'
 // import clock from '../../assets/images/projects/clock.png'
 import slider from "../../assets/images/projects/slider.png";
-import chatApp from "../../assets/images/projects/chatApp.png";
-import lift from "../../assets/images/projects/lift.png";
+// import chatApp from "../../assets/images/projects/chatApp.png";
+// import lift from "../../assets/images/projects/lift.png";
 import styles from "./style.module.css";
 
 const myProjects = [
