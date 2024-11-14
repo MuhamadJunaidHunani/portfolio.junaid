@@ -1,0 +1,96 @@
+.projectCard {
+  width: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #262626;
+  cursor: pointer;
+}
+
+.projectCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.cardImage {
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.overlayContainer {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.projectCard:hover .overlayContainer {
+  opacity: 1;
+}
+
+.overlayButton {
+  color: white;
+  font-size: 0.875rem;
+  text-decoration: none;
+  margin: 0.25rem;
+  background-color: #ffffff00;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.overlayButton:hover {
+  background-color: #ff8a50;
+}
+
+.projectCard:hover .cardImage img {
+  transform: scale(1.05);
+}
+
+.cardContent {
+  padding: 20px;
+  text-align: center;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e0e0e0;
+  margin-bottom: 8px;
+}
+
+.cardDescription {
+  font-size: 14px;
+  color: #b0b0b0;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.cardButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #3a7bff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cardButton:hover {
+  background-color: #336fcc;
+}
