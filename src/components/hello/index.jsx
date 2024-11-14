@@ -42,8 +42,8 @@ const Hello = () => {
   return (
     <div className={`sticky top-0 ${styles.hello}`} id="hello">
       <div className={styles.overlay} id="overlay">
-        <h1 className={styles.heading} id="heading"></h1>
-        <p className={styles.para} id="para"></p>
+        <h1 className={styles.heading} id="heading">loading</h1>
+        <p className={styles.para} id="para">loading</p>
       </div>
     </div>
   );
