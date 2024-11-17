@@ -25,7 +25,6 @@ const ContactForm = () => {
                         <div className="flex space-x-5 text-xl">
                             <i className="fab fa-facebook text-teal-400"></i>
                             <i className="fab fa-twitter text-teal-400"></i>
-                            <i className="fab fa-instagram text-teal-400"></i>
                             <i className="fab fa-linkedin text-teal-400"></i>
                         </div>
                     </div>
