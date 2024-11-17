@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 const AutoTypingText = ({ texts, speed = 100 }) => {
   const [displayedText, setDisplayedText] = useState('');
-  const [index, setIndex] = useState(0); // Current text index
-  const [charIndex, setCharIndex] = useState(0); // Current character index
-  const [isTyping, setIsTyping] = useState(true); // Typing or deleting
+  const [index, setIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
     if (isTyping) {
@@ -15,7 +15,7 @@ const AutoTypingText = ({ texts, speed = 100 }) => {
         }, speed);
         return () => clearTimeout(timer);
       } else {
-        // Move to the deleting phase
+      
         setTimeout(() => {
 
           setIsTyping(false);
@@ -33,7 +33,7 @@ const AutoTypingText = ({ texts, speed = 100 }) => {
         }, speed);
         return () => clearTimeout(timer);
       } else {
-        // Move to the next text
+      
         setIsTyping(true);
         setIndex((index + 1) % texts.length);
         setCharIndex(0);

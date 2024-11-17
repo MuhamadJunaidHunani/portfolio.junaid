@@ -11,7 +11,6 @@ const ContactForm = () => {
                 <input type="text" placeholder="Enter your Name" className={styles.inputField} />
                 </div>
                 <StarRating totalStars={5}/>
-                {/* <input type="text" placeholder="Enter your address" className={styles.inputField} /> */}
                 <input type="text" placeholder="Enter your phone (e.g. +14155)" className={styles.inputField} />
                 <textarea placeholder="Enter your message" className={styles.messageField}></textarea>
                 <button className={styles.submitButton}>Submit</button>

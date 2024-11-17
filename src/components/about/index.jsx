@@ -30,9 +30,6 @@ const About = ({ Languages }) => {
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
-    // { id: 4, title: 'Branding', icon: '📈', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
-    // { id: 5, title: 'Creative Design', icon: '✏️', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
-    // { id: 6, title: 'Custom Support', icon: '💬', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
   ];
   return (
     <div className={`${styles.main} relative bg-[purple] `} id="about">

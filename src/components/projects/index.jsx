@@ -21,7 +21,6 @@ const Projects = () => {
         {myProjects.map((item, index) => {
           return (
             <div className={styles.projectCard}>
-              {/* <p className={styles.cardTitle}>{item.title}</p> */}
               <div className={styles.imgDescCont}>
                 <img
                   className={styles.cardImg}

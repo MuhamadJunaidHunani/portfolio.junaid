@@ -3,14 +3,12 @@ import styles from './style.module.css';
 function ProjectCard() {
     return (
         <div className={styles.projectCard}>
-            {/* Image Section */}
             <div className={styles.cardImage}>
                 <img
                     src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
                     alt="Project"
                 />
              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
-  {/* View Project Icon */}
   <a
     href="/"
     className="m-1 p-2 bg-gray-800 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-110"
@@ -22,7 +20,6 @@ function ProjectCard() {
     />
   </a>
   
-  {/* GitHub Icon */}
   <a
     href="/"
     className="m-1 p-2 bg-gray-800 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-110"
@@ -37,7 +34,6 @@ function ProjectCard() {
 
             </div>
 
-            {/* Content Section */}
             <div className={styles.cardContent}>
                 <h3 className={styles.cardTitle}>Project Title</h3>
                 <p className={styles.cardDescription}>

@@ -4,7 +4,6 @@ import styles from "./style.module.css";
 const Sidebar = () => {
   const [activeLink, setActiveLink] = useState("home");
   
-  // Use useMemo to memoize the sections array
   const sections = useMemo(() => ["home", "hello", "about", "projects", "skills", "contact"], []);
 
   const links = [
