@@ -5,8 +5,8 @@ import AutoTypingText from "../AutoTypingText";
 
 const Home = ()=>{
     const texts = [
-        "Full Stack Developer  ",
-        "/* Way to MERN Stack */  ",
+        "Front End Developer ",
+        "/* Way to FULL STACK */ ",
       ];
     return(
         <div className={styles.main} id="home">
