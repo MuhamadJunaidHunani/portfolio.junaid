@@ -3,6 +3,7 @@
 }
 .main {
   height: calc(100vh - 45px);
+  max-height: 800px;
   background-color: var(--lightBg);
   position: sticky;
   top: 0px;
@@ -12,6 +13,8 @@
 
 .skillsContainer , .servicesContainer {
   height: calc(100vh - 45px);
+  max-height: 800px;
+
   width: 100%;
   background-color: var(--lightBg);
   padding: 25px 40px;

@@ -5,7 +5,7 @@ import NavBar from "../navbar";
 
 const Layout = ({children , Languages})=>{
     return(
-        <div className={styles.main}>
+        <div className={`max-w-[1500px] overflow-hidden ${styles.main}`}>
             <SideBar/>
             <div className={styles.subMain}>
                 <NavBar languages = {Languages}/>

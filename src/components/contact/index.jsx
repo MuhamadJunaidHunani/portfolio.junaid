@@ -3,6 +3,12 @@ import style from './style.module.css';
 import { validateForm } from '../../Utils/vaidateForm';
 import InputField from '../UI/FormInput';
 import TextareaField from '../UI/FormTextArea';
+import LocationCard from '../UI/LocationCard';
+import {  FaLinkedinIn, FaLocationDot } from 'react-icons/fa6';
+import { MdEmail } from 'react-icons/md';
+import { FaPhoneAlt } from 'react-icons/fa';
+import { BsTwitterX } from 'react-icons/bs';
+import { VscGithub } from 'react-icons/vsc';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -33,29 +39,27 @@ const ContactForm = () => {
     return (
         <div id="contact" className="bg-[var(--lightBg)] text-white min-h-screen flex items-center justify-center">
             <div className="container mx-auto px-[80px] py-5">
-                <h1 className="text-3xl md:text-5xl font-bold text-center mb-6 text-teal-400">
-                    ANIMATED & RESPONSIVE CONTACT US PAGE
+                <h1 className="text-3xl md:text-5xl text-center mb-6 text-teal-400">
+                    Reach Me
                 </h1>
                 <p className="text-center text-gray-300 mb-12">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem numquam id reprehenderit, sunt
                     laudantium enim possimus repellat debitis et quis!
                 </p>
-                <div className="grid md:grid-cols-2 gap-20">
-                    <div>
-                        <h2 className="text-2xl font-semibold mb-5 text-teal-400">Address</h2>
-                        <p className="mb-4">402671 Sugar Camp Road, Owatonna, Minnesota, 55026-080</p>
-                        <h2 className="text-2xl font-semibold mb-5 text-teal-400">Phone</h2>
-                        <p className="mb-4">000-000-0000</p>
-                        <h2 className="text-2xl font-semibold mb-5 text-teal-400">Email</h2>
-                        <p className="mb-4">wrub7d7810@temporary-mail.com</p>
-                        <h2 className="text-2xl font-semibold mb-5 text-teal-400">Connect with us</h2>
-                        <div className="flex space-x-5 text-xl">
-                            <i className="fab fa-facebook text-teal-400"></i>
-                            <i className="fab fa-twitter text-teal-400"></i>
-                            <i className="fab fa-linkedin text-teal-400"></i>
+                <div className="flex justify-between items-center lg:flex-row flex-col">
+                    <div className='flex flex-col gap-[45px]'>
+                        <LocationCard icon={<FaLocationDot/>} title={'Address'} text={'Karachi , Pakistan'} />
+                        <LocationCard icon={<MdEmail/>} title={'Email'} text={'junaidhunani890@gmail.com'} />
+                        <LocationCard icon={<FaPhoneAlt/>} title={'Phone'} text={'0321-89*****'} />
+                        <div className="flex items-center text-2xl gap-[6px] mt-[30px]">
+                            <BsTwitterX/>
+                            <div className='border-b-2 border-[#f0f0f0] w-[30px]'></div>
+                            <FaLinkedinIn/>
+                            <div className='border-b-2 border-[#f0f0f0] w-[30px]'></div>
+                            <VscGithub/>
                         </div>
                     </div>
-                    <div className={`relative p-[2px] rounded-sm ${style.ContactFormCont}`}>
+                    <div className={` max-w-[420px] w-full relative p-[2px] rounded-sm ${style.ContactFormCont}`}>
                         <div className='p-[20px] bg-[--lightBg]'>
                             <form className="p-[40px] pt-[10px] bg-[#2b2b2b]" onSubmit={handleSubmit}>
                                 <InputField

@@ -1,4 +1,6 @@
 .div2{
     height: calc(100vh - 45px);
+  max-height: 800px;
+
     pointer-events: none;
 }

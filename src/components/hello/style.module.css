@@ -3,11 +3,15 @@
     background-position: center;
     background-size: cover;
     height: calc(100vh - 45px);
+  max-height: 800px;
+
     /* background-attachment: fixed; */
 }
 .overlay{
     width: 100%;
     height: calc(100vh - 45px);
+  max-height: 800px;
+
     position: absolute;
     background-color: rgb(0, 0, 0);
     opacity: 1%;

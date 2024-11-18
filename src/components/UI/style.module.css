@@ -99,3 +99,24 @@
 .cardButton:hover {
   background-color: #336fcc;
 }
+.iconCardCont{
+  background: repeating-conic-gradient(
+    from 20deg,
+    #01dbc2 0%,
+    #01dbc2 12.5%,
+    transparent 12.5%,
+    transparent 25%,
+    #01dbc2 25%,
+    #01dbc2 37.5%,
+    transparent 37.5%,
+    transparent 50%,
+    #01dbc2 50%,
+    #01dbc2 62.5%,
+    transparent 62.5%,
+    transparent 75%,
+    #01dbc2 75%,
+    #01dbc2 87.5%,
+    transparent 87.5%,
+    transparent 100%
+  );
+}

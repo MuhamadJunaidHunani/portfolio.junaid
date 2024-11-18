@@ -48,10 +48,10 @@ const Languages = [
 
 function App() {
   return (
-    <div className='max-w-[100vw]'>
+    <div className='flex justify-center'>
       <Layout Languages={Languages}>
         <Main Languages={Languages}/>
-      </Layout>
+      </Layout> 
     </div>
   );
 }
