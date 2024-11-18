@@ -48,7 +48,7 @@ const Languages = [
 
 function App() {
   return (
-    <div>
+    <div className='max-w-[100vw]'>
       <Layout Languages={Languages}>
         <Main Languages={Languages}/>
       </Layout>

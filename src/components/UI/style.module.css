@@ -1,3 +1,8 @@
+
+.Inputs:focus~label {
+  font-size: 10px;
+  top: 5px;
+}
 .projectCard {
   width: 320px;
   border-radius: 16px;
