@@ -1,7 +1,6 @@
 .main{
     width: 100%;
     height: calc(100vh - 45px);
-
     background-color:var(--lightBg) ;
     overflow: auto;
     /* background-image: url('../../assets/images/bg2.jpg'); */

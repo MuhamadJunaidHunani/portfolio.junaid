@@ -1,5 +1,4 @@
-.hello2{
-    height: calc(100vh - 45px);
+.hello2 {
+  height: calc(100vh - 45px);
   max-height: 800px;
-
 }

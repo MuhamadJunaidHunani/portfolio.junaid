@@ -15,6 +15,7 @@
   --links:#21A1EA;
   --border:rgb(46, 46, 46);
 }
+
 .Typer{
   font-size: 30px;
   animation: buffering 1s infinite;

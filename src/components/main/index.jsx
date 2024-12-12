@@ -9,7 +9,6 @@ import Skills from "../skills";
 import Hello from "../hello";
 import Hello2 from "../hello2";
 
-
 const Main = ({Languages})=>{
     return(
         <div className={styles.main} id="main">
